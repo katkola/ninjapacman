@@ -253,12 +253,45 @@
     }
     drawGhosts();
 
+    //ghosts move towards players position
     function moveGhosts(){
         if (ninjaman.x > pinky.x){
             pinky.x++;
         }
         else if(ninjaman.x < pinky.x){
             pinky.x--;
+        }
+        else if(ninjaman.y < pinky.y){
+            pinky.y--;
+        }
+        else if(ninjaman.y > pinky.y){
+            pinky.y++;
+        }
+
+        if (ninjaman.x > pumpky.x){
+            pumpky.x++;
+        }
+        else if(ninjaman.x < pumpky.x){
+            pumpky.x--;
+        }
+        else if(ninjaman.y < pumpky.y){
+            pumpky.y--;
+        }
+        else if(ninjaman.y > pumpky.y){
+            pumpky.y++;
+        }
+
+        if (ninjaman.x > red.x){
+            red.x++;
+        }
+        else if(ninjaman.x < red.x){
+            red.x--;
+        }
+        else if(ninjaman.y < red.y){
+            red.y--;
+        }
+        else if(ninjaman.y > red.y){
+            red.y++;
         }
     }
     
